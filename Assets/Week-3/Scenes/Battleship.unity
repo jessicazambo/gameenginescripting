@@ -273,7 +273,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8370666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298940535}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveVertical
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8370666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,8 +493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 467.01355}
-  m_SizeDelta: {x: 0, y: -934.027}
+  m_AnchoredPosition: {x: 0, y: 420.81836}
+  m_SizeDelta: {x: 0, y: -841.6367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &105862831
 MonoBehaviour:
@@ -628,7 +640,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 151116497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298940535}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveHorizontal
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &151116497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,6 +703,7 @@ GameObject:
   - component: {fileID: 298940533}
   - component: {fileID: 298940532}
   - component: {fileID: 298940531}
+  - component: {fileID: 298940535}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -770,6 +795,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &298940535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298940530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10957b42358220469ac143ff4597e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridRoot: {fileID: 105862830}
+  cellPrefab: {fileID: 5345531934031798646, guid: 2f2e63b50289cb643b3b4ccd9ec52f0b, type: 3}
+  winLabel: {fileID: 1045731366}
+  timeLabel: {fileID: 1615732400}
+  scoreLabel: {fileID: 1453819422}
 --- !u!1 &455041861
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,8 +849,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 467.31702}
-  m_SizeDelta: {x: 0, y: -421.7936}
+  m_AnchoredPosition: {x: 0, y: 457.2869}
+  m_SizeDelta: {x: 0, y: -441.8538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455041863
 MonoBehaviour:
@@ -1064,7 +1106,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 748553606}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298940535}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveHorizontal
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &748553606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,7 +1239,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1018966273}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298940535}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveVertical
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1018966273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1923,7 +1989,7 @@ RectTransform:
   m_GameObject: {fileID: 1569904712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.92042, y: 0.92042, z: 0.92042}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 748553604}
@@ -1936,8 +2002,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -618.4846}
-  m_SizeDelta: {x: 0, y: -1236.979}
+  m_AnchoredPosition: {x: -0.00030517578, y: -646}
+  m_SizeDelta: {x: 93.378, y: -1236.979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569904714
 MonoBehaviour:
