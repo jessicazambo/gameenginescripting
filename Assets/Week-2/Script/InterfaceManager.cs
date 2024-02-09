@@ -14,14 +14,8 @@ public class InterfaceManager : MonoBehaviour
         label.text = msg;
     }
 
-    //public int number (4 bytes);
-    //public float numberdecimal (4 bytes);
-    //public double longerdecimal (8 bytes);
-    //public long bignumber (int just 8 bytes);
-
     public void Add(int number)
     {
-        label.text = (number + 10).ToString();
+        label.text = (number).ToString();
     }
-    //change + sign to whatever function
 }
