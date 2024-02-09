@@ -1,18 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace Battleship
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManager : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField]
+        private int[,] grid = new int[,]
+        {
+            {1, 1, 0, 0, 1 },
+            {0, 0, 0, 0, 0 },
+            {0, 0, 1, 0, 1 },
+            {1, 0, 1, 0, 0 },
+            {1, 0, 1, 0, 1 },
+        };
+
+        private bool[,] hits;
+
+        private int nRows;
+        private int nCols;
+
+        private int row;
+        private int col;
+
+        private int score;
+        private int time;
+
+        [SerializeField] Transform gridRoot;
+        [SerializeField] GameObject cellPrefab;
+        [SerializeField] GameObject winLabel;
+        [SerializeField] TextMeshProUGUI timeLabel;
+        [SerializeField] TextMeshProUGUI scoreLabel;
+
+        private void Awake()
+        {
+            nRows = grid.GetLength(0);
+            nCols = grid.GetLength(1);
+
+            hits = new bool[nRows, nCols];
+
+            for (int i = 0; i < nRows * nCols; i++)
+            {
+                Instantiate(cellPrefab, gridRoot);
+            }
+        }
+
+
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
