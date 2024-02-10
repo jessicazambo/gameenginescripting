@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 156523555}
   - component: {fileID: 156523554}
   - component: {fileID: 156523553}
+  - component: {fileID: 156523556}
   m_Layer: 5
   m_Name: Button9
   m_TagString: Untagged
@@ -206,16 +207,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 156523556}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 9
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 9
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &156523554
@@ -256,6 +257,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156523551}
   m_CullTransparentMesh: 1
+--- !u!114 &156523556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156523551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &172712784
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +282,7 @@ GameObject:
   - component: {fileID: 172712788}
   - component: {fileID: 172712787}
   - component: {fileID: 172712786}
+  - component: {fileID: 172712789}
   m_Layer: 5
   m_Name: Button7
   m_TagString: Untagged
@@ -339,16 +354,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 172712789}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 7
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &172712787
@@ -389,6 +404,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172712784}
   m_CullTransparentMesh: 1
+--- !u!114 &172712789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172712784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &202555848
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +711,7 @@ GameObject:
   - component: {fileID: 270296050}
   - component: {fileID: 270296049}
   - component: {fileID: 270296048}
+  - component: {fileID: 270296051}
   m_Layer: 5
   m_Name: Button8
   m_TagString: Untagged
@@ -754,10 +783,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 270296051}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -804,6 +833,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270296046}
   m_CullTransparentMesh: 1
+--- !u!114 &270296051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270296046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &290904923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1341,7 @@ GameObject:
   - component: {fileID: 424950957}
   - component: {fileID: 424950956}
   - component: {fileID: 424950955}
+  - component: {fileID: 424950958}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -1370,16 +1413,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 424950958}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &424950956
@@ -1420,6 +1463,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424950953}
   m_CullTransparentMesh: 1
+--- !u!114 &424950958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424950953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &503403721
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,6 +2518,7 @@ GameObject:
   - component: {fileID: 1046510914}
   - component: {fileID: 1046510913}
   - component: {fileID: 1046510912}
+  - component: {fileID: 1046510915}
   m_Layer: 5
   m_Name: Button5
   m_TagString: Untagged
@@ -2533,16 +2590,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 1046510915}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1046510913
@@ -2583,6 +2640,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046510910}
   m_CullTransparentMesh: 1
+--- !u!114 &1046510915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046510910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &1086025425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,7 +2740,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1086025430}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Calculate
+        m_MethodName: PerformCalculation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3145,6 +3215,7 @@ GameObject:
   - component: {fileID: 1308265494}
   - component: {fileID: 1308265493}
   - component: {fileID: 1308265492}
+  - component: {fileID: 1308265495}
   m_Layer: 5
   m_Name: Button4
   m_TagString: Untagged
@@ -3216,16 +3287,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 1308265495}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1308265493
@@ -3266,6 +3337,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308265490}
   m_CullTransparentMesh: 1
+--- !u!114 &1308265495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308265490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &1313165060
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,6 +3630,7 @@ GameObject:
   - component: {fileID: 1426210545}
   - component: {fileID: 1426210544}
   - component: {fileID: 1426210543}
+  - component: {fileID: 1426210546}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -3617,16 +3702,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 1426210546}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 5
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1426210544
@@ -3667,6 +3752,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426210541}
   m_CullTransparentMesh: 1
+--- !u!114 &1426210546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426210541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &1614999979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,12 +4142,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 208955367}
+  - {fileID: 1086025426}
   - {fileID: 1994666111}
   - {fileID: 1707465528}
   - {fileID: 1758174907}
   - {fileID: 1846605257}
   - {fileID: 362480182}
-  - {fileID: 1086025426}
   - {fileID: 1426210542}
   - {fileID: 1795081077}
   - {fileID: 424950954}
@@ -4226,6 +4324,7 @@ GameObject:
   - component: {fileID: 1731012548}
   - component: {fileID: 1731012547}
   - component: {fileID: 1731012546}
+  - component: {fileID: 1731012549}
   m_Layer: 5
   m_Name: Button0
   m_TagString: Untagged
@@ -4297,16 +4396,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 1731012549}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1731012547
@@ -4347,6 +4446,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731012544}
   m_CullTransparentMesh: 1
+--- !u!114 &1731012549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731012544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &1758174906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,6 +4618,7 @@ GameObject:
   - component: {fileID: 1795081080}
   - component: {fileID: 1795081079}
   - component: {fileID: 1795081078}
+  - component: {fileID: 1795081081}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -4577,16 +4690,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 1795081081}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1795081079
@@ -4627,6 +4740,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795081076}
   m_CullTransparentMesh: 1
+--- !u!114 &1795081081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795081076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &1829292782
 GameObject:
   m_ObjectHideFlags: 0
@@ -4639,6 +4765,7 @@ GameObject:
   - component: {fileID: 1829292786}
   - component: {fileID: 1829292785}
   - component: {fileID: 1829292784}
+  - component: {fileID: 1829292787}
   m_Layer: 5
   m_Name: Button6
   m_TagString: Untagged
@@ -4710,16 +4837,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1709473508}
-        m_TargetAssemblyTypeName: InterfaceManager, Assembly-CSharp
-        m_MethodName: Add
-        m_Mode: 3
+      - m_Target: {fileID: 1829292787}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddInput
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 6
           m_FloatArgument: 0
-          m_StringArgument: 8
+          m_StringArgument: 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1829292785
@@ -4760,6 +4887,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829292782}
   m_CullTransparentMesh: 1
+--- !u!114 &1829292787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829292782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d1d2bb11d555429537f2102e7c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 208955368}
 --- !u!1 &1846605256
 GameObject:
   m_ObjectHideFlags: 0

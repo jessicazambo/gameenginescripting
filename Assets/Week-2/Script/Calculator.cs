@@ -16,6 +16,7 @@ public class Calculator : MonoBehaviour
 
     public void AddInput(string input)
     {
+        Debug.Log("AddInput method called with input: " + input);
         if (clearPrevInput)
         {
             textLabel.text = string.Empty;
@@ -27,6 +28,7 @@ public class Calculator : MonoBehaviour
 
     public void SetEquationAsAdd()
     {
+        Debug.Log("SetEquationAsAdd method called");
         prevInput = float.Parse(textLabel.text);
         clearPrevInput = true;
         equationType = EquationType.ADD;
@@ -34,6 +36,7 @@ public class Calculator : MonoBehaviour
 
     public void SetEquationAsSubtract()
     {
+        Debug.Log("SetEquationAsSubtract method called");
         prevInput = float.Parse(textLabel.text);
         clearPrevInput = true;
         equationType = EquationType.SUBTRACT;
@@ -41,6 +44,7 @@ public class Calculator : MonoBehaviour
 
     public void SetEquationAsMultiply()
     {
+        Debug.Log("SetEquationAsMultiply method called");
         prevInput = float.Parse(textLabel.text);
         clearPrevInput = true;
         equationType = EquationType.MULTIPLY;
@@ -48,6 +52,7 @@ public class Calculator : MonoBehaviour
 
     public void SetEquationAsDivide()
     {
+        Debug.Log("SetEquationAsDivide method called");
         prevInput = float.Parse(textLabel.text);
         clearPrevInput = true;
         equationType = EquationType.DIVIDE;
@@ -55,6 +60,7 @@ public class Calculator : MonoBehaviour
 
     public void Add()
     {
+        Debug.Log("Add method called");
         float currentInput = float.Parse(textLabel.text);
         float result = prevInput + currentInput;
         textLabel.text = result.ToString();
@@ -63,6 +69,7 @@ public class Calculator : MonoBehaviour
 
     public void Subtract()
     {
+        Debug.Log("Subtract method called");
         float currentInput = float.Parse(textLabel.text);
         float result = prevInput - currentInput;
         textLabel.text = result.ToString();
@@ -70,6 +77,7 @@ public class Calculator : MonoBehaviour
 
     public void Multiply()
     {
+        Debug.Log("Multiply method called");
         float currentInput = float.Parse(textLabel.text);
         float result = prevInput * currentInput;
         textLabel.text = result.ToString();
@@ -77,6 +85,7 @@ public class Calculator : MonoBehaviour
 
     public void Divide()
     {
+        Debug.Log("Divide method called");
         float currentInput = float.Parse(textLabel.text);
         float result = prevInput / currentInput;
         textLabel.text = result.ToString();
@@ -84,6 +93,7 @@ public class Calculator : MonoBehaviour
 
     public void Clear()
     {
+        Debug.Log("Cleared");
         textLabel.text = "0";
         clearPrevInput = true;
         prevInput = 0;
@@ -92,12 +102,37 @@ public class Calculator : MonoBehaviour
 
     public void Calculate()
     {
-        Debug.Log("Method Called");
-        if (equationType == EquationType.ADD) Add();
-        else if (equationType == EquationType.SUBTRACT) Subtract();
-        else if (equationType == EquationType.MULTIPLY) Multiply();
-        else if (equationType == EquationType.DIVIDE) Divide();
+        Debug.Log("Calculate method called");
+
+        if (equationType == EquationType.ADD)
+        {
+            Add();
+            Debug.Log("Result after addition: " + textLabel.text);
+        }
+        else if (equationType == EquationType.SUBTRACT)
+        {
+            Subtract();
+            Debug.Log("Result after subtraction: " + textLabel.text);
+        }
+        else if (equationType == EquationType.MULTIPLY)
+        {
+            Multiply();
+            Debug.Log("Result after multiplication: " + textLabel.text);
+        }
+        else if (equationType == EquationType.DIVIDE)
+        {
+            Divide();
+            Debug.Log("Result after division: " + textLabel.text);
+        }
+
     }
+
+    public void PerformCalculation()
+    {
+        Debug.Log("PerformCalculation called");
+        Calculate();
+    }
+
 
     public enum EquationType
     {
