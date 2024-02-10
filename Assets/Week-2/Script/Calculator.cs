@@ -92,9 +92,9 @@ public class Calculator : MonoBehaviour
     public void Calculate()
     {
         if (equationType == EquationType.ADD) Add();
-        else if (equationType == EquationType.SUBTRACT) Subtract();
-        else if (equationType == EquationType.MULTIPLY) Multiply();
-        else if (equationType == EquationType.DIVIDE) Divide();
+        if (equationType == EquationType.SUBTRACT) Subtract();
+        if (equationType == EquationType.MULTIPLY) Multiply();
+        if (equationType == EquationType.DIVIDE) Divide();
     }
 
     public enum EquationType
