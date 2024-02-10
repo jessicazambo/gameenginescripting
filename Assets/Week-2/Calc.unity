@@ -3887,7 +3887,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1707465532}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Subtract
+        m_MethodName: SetEquationAsSubtract
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4433,7 +4433,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1758174911}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Multiply
+        m_MethodName: SetEquationAsMultiply
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4846,7 +4846,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1846605261}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Divide
+        m_MethodName: SetEquationAsDivide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5127,7 +5127,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1994666115}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Add
+        m_MethodName: SetEquationAsAdd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

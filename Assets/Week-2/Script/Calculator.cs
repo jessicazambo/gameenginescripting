@@ -58,6 +58,7 @@ public class Calculator : MonoBehaviour
         float currentInput = float.Parse(textLabel.text);
         float result = prevInput + currentInput;
         textLabel.text = result.ToString();
+
     }
 
     public void Subtract()
@@ -91,10 +92,11 @@ public class Calculator : MonoBehaviour
 
     public void Calculate()
     {
+        Debug.Log("Method Called");
         if (equationType == EquationType.ADD) Add();
-        if (equationType == EquationType.SUBTRACT) Subtract();
-        if (equationType == EquationType.MULTIPLY) Multiply();
-        if (equationType == EquationType.DIVIDE) Divide();
+        else if (equationType == EquationType.SUBTRACT) Subtract();
+        else if (equationType == EquationType.MULTIPLY) Multiply();
+        else if (equationType == EquationType.DIVIDE) Divide();
     }
 
     public enum EquationType
