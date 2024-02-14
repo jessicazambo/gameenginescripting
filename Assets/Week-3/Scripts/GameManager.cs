@@ -127,11 +127,14 @@ namespace Battleship
             {
                 ShowMiss();
             }
+
+            TryEndGame();
         }
+
 
         void TryEndGame()
         {
-            for (int row = 0; row < nRows; nRows++)
+            for (int row = 0; row < nRows; row++)
             {
                 for (int col = 0; col < nCols; col++)
                 {
@@ -143,13 +146,19 @@ namespace Battleship
 
             winLabel.SetActive(true);
 
-            CancelInvoke("IncrementTime");    
+            CancelInvoke("IncrementTime");
         }
+
 
         void IncrementTime()
         {
             time++;
             timeLabel.text = string.Format("{0}:{1}", time / 60, (time % 60).ToString("00"));
+        }
+
+        void Restart()
+        {
+
         }
 
 

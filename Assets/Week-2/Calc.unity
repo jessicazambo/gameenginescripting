@@ -2740,7 +2740,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1086025430}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: PerformCalculation
+        m_MethodName: Calculate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
