@@ -156,22 +156,12 @@ namespace Battleship
             timeLabel.text = string.Format("{0}:{1}", time / 60, (time % 60).ToString("00"));
         }
 
-        void Restart()
+        public void Restart()
         {
-
-        }
-
-
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            UnselectCurrentCell();
+            row = 0;
+            col = 0;
+            SelectCurrentCell();
         }
     }
 }

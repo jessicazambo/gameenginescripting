@@ -1506,7 +1506,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1203330925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 298940535}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1203330925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,6 +1944,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12bd0af327bebef4db9aa3b677147472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  peg1Transform: {fileID: 0}
+  peg2Transform: {fileID: 0}
+  peg3Transform: {fileID: 0}
   peg1: 01000000020000000300000004000000
   peg2: 00000000000000000000000000000000
   peg3: 00000000000000000000000000000000
