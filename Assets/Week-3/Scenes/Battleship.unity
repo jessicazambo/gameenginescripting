@@ -1324,7 +1324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5253, y: -227}
+  m_AnchoredPosition: {x: 224, y: -236}
   m_SizeDelta: {x: 506.1683, y: 155.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045731368
@@ -2262,11 +2262,11 @@ RectTransform:
   m_LocalScale: {x: 0.92042, y: 0.92042, z: 0.92042}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2084570858}
   - {fileID: 748553604}
   - {fileID: 151116495}
   - {fileID: 8370664}
   - {fileID: 1018966271}
-  - {fileID: 2084570858}
   - {fileID: 455041862}
   - {fileID: 1203330923}
   m_Father: {fileID: 298940534}
@@ -2554,7 +2554,6 @@ GameObject:
   - component: {fileID: 2084570861}
   - component: {fileID: 2084570860}
   - component: {fileID: 2084570859}
-  - component: {fileID: 2084570862}
   m_Layer: 5
   m_Name: Fire
   m_TagString: Untagged
@@ -2626,7 +2625,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084570862}
+      - m_Target: {fileID: 298940535}
         m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
         m_MethodName: Fire
         m_Mode: 1
@@ -2676,23 +2675,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084570857}
   m_CullTransparentMesh: 1
---- !u!114 &2084570862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084570857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d10957b42358220469ac143ff4597e6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridRoot: {fileID: 105862830}
-  cellPrefab: {fileID: 5345531934031798646, guid: 2f2e63b50289cb643b3b4ccd9ec52f0b, type: 3}
-  winLabel: {fileID: 0}
-  timeLabel: {fileID: 1615732400}
-  scoreLabel: {fileID: 1453819422}
 --- !u!1 &2088013774
 GameObject:
   m_ObjectHideFlags: 0

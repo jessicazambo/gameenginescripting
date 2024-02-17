@@ -162,6 +162,40 @@ namespace Battleship
             row = 0;
             col = 0;
             SelectCurrentCell();
+
+            for (int i = 0; i < nRows; i++)
+            {
+                for (int j = 0; j < nCols; j++)
+                {
+                    hits[i, j] = false;
+                }
+            }
+
+            time = 0;
+            timeLabel.text = "0:00";
+
+            score = 0;
+            scoreLabel.text = "Score: 0";
+
+            foreach (Transform cellTransform in gridRoot)
+            {
+                Transform hit = cellTransform.Find("Hit");
+                Transform miss = cellTransform.Find("Miss");
+
+                if (hit != null)
+                    hit.gameObject.SetActive(false);
+
+                if (miss != null)
+                    miss.gameObject.SetActive(false);
+            }
+
+            for (int i = 0; i < nRows; i++)
+            {
+                for (int j = 0; j < nCols; j++)
+                {
+                    grid[i, j] = Random.Range(0, 2);
+                }
+            }
         }
     }
 }
