@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace ClassDemo
 {
     public class Player : MonoBehaviour
@@ -11,14 +10,21 @@ namespace ClassDemo
 
         public void Damage(int amt)
         {
-            health -=amt;
+            health -= amt;
         }
 
         private Enemy FindNewTarget()
         {
-            Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+            GameObject[] enemyObjects = GameObject.FindGameObjectsWithTag("EnemyTag");
+            int randomIndex = Random.Range(0, enemyObjects.Length);
+            return enemyObjects[randomIndex].GetComponent<Enemy>();
+
+            /*GameObject enemyObject = GameObject.Find("EnemyObject");
+            return enemyObject.GetComponent<Enemy>();*/
+
+            /*Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
             int randomIndex = Random.Range(0, enemies.Length);
-            return enemies[randomIndex];
+            return enemies[randomIndex];*/
         }
 
         [ContextMenu("Attack")]
@@ -27,5 +33,6 @@ namespace ClassDemo
             Enemy target = FindNewTarget();
             target.Damage(10);
         }
+
     }
 }

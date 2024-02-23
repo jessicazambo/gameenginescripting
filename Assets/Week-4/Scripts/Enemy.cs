@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-namespace ClassDemo {
+namespace ClassDemo
+{
     public class Enemy : MonoBehaviour
     {
         public int health = 10;
@@ -20,6 +20,6 @@ namespace ClassDemo {
         {
             target.Damage(3);
         }
-    
+
     }
 }
