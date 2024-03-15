@@ -92,7 +92,7 @@ namespace Week6
             {
                 rotDir = mouseDeltaY > 0 ? -1 : 1; 
 
-                cameraRotX += rotationVertical * Time.deltaTime * rotDir; 
+                cameraRotX += rotationVertical  * Time.deltaTime * rotDir; 
                 cameraRotX = Mathf.Clamp(cameraRotX, -45f, 45f); 
 
                 var targetRotation = Quaternion.Euler(Vector3.right * cameraRotX); 
