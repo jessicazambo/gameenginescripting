@@ -2,11 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Week6;
 
 namespace Week6
 {
     public class PlayerController : MonoBehaviour
     {
+
+        [SerializeField] int maxHealth = 100;
+        int currentHealth;
+
+        [SerializeField] int maxKeys = 3;
+        int keyCount = 0;
+
+        [SerializeField] int maxCoins = 99;
+        int coinCount = 0;
 
         [SerializeField] float speed;
         [SerializeField] float jumpForce;
@@ -124,6 +134,25 @@ namespace Week6
         {
             Debug.Log("Jump!");
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        }
+
+        private bool m_HasKey = false;
+
+        public bool HasKey()
+        {
+            return m_HasKey;
+        }
+
+        public void AddKey()
+        {
+            m_HasKey = true;
+            Debug.Log("Key added to inventory");
+        }
+
+        public void RemoveKey()
+        {
+            m_HasKey = false;
+            Debug.Log("Key removed from inventory");
         }
     }
 }
