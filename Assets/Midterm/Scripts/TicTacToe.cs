@@ -28,116 +28,135 @@ public class TicTacToe : MonoBehaviour
 
     public void Score()
     {
+
         if (button1.text == "X" && button2.text == "X" && button3.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
         if (button1.text == "X" && button4.text == "X" && button7.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
         if (button1.text == "X" && button5.text == "X" && button9.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
         if (button3.text == "X" && button5.text == "X" && button7.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
         if (button2.text == "X" && button5.text == "X" && button8.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
         if (button3.text == "X" && button6.text == "X" && button9.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
         if (button4.text == "X" && button5.text == "X" && button6.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
         if (button7.text == "X" && button8.text == "X" && button9.text == "X")
         {
-            message.text = "Team X is winning!";
+            message.text = "Congratulations Team X!";
             plusone = int.Parse(teamx.text);
             teamx.text = Convert.ToString(plusone + 1);
         }
 
+
+
+
         if (button1.text == "O" && button2.text == "O" && button3.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
         }
 
         if (button1.text == "O" && button4.text == "O" && button7.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
         }
 
         if (button1.text == "O" && button5.text == "O" && button9.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
         }
 
         if (button3.text == "O" && button5.text == "O" && button7.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
         }
 
         if (button2.text == "O" && button5.text == "O" && button8.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
         }
 
         if (button3.text == "O" && button6.text == "O" && button9.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
         }
 
         if (button4.text == "O" && button5.text == "O" && button6.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
         }
 
         if (button7.text == "O" && button8.text == "O" && button9.text == "O")
         {
-            message.text = "Team O is winning!";
+            message.text = "Congratulations Team O!";
             plusone = int.Parse(teamo.text);
             teamo.text = Convert.ToString(plusone + 1);
+        }
+
+
+
+        if (button1.text != "" &&
+        button2.text != "" &&
+        button3.text != "" &&
+        button4.text != "" &&
+        button5.text != "" &&
+        button6.text != "" &&
+        button7.text != "" &&
+        button8.text != "" &&
+        button9.text != "")
+        {
+            message.text = "It's a tie!";
         }
 
     }
@@ -305,5 +324,6 @@ public class TicTacToe : MonoBehaviour
         button7.text = "";
         button8.text = "";
         button9.text = "";
+        message.text = "";
     }
 }
