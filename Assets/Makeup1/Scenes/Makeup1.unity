@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 566432209}
   - component: {fileID: 566432211}
   - component: {fileID: 566432210}
+  - component: {fileID: 566432212}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -359,6 +360,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566432208}
   m_CullTransparentMesh: 1
+--- !u!114 &566432212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566432208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f4c8f191eff634daaa81920d38dbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreLabel: {fileID: 566432210}
 --- !u!1 &1071994869
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +461,7 @@ Transform:
   m_GameObject: {fileID: 1071994869}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 377, z: 0}
+  m_LocalPosition: {x: 0, y: 1232, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -463,6 +477,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1557857305}
   - component: {fileID: 1557857304}
+  - component: {fileID: 1557857306}
+  - component: {fileID: 1557857307}
   m_Layer: 0
   m_Name: Asteroid (1)
   m_TagString: Untagged
@@ -531,12 +547,60 @@ Transform:
   m_GameObject: {fileID: 1557857303}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -539, y: 709, z: 0}
+  m_LocalPosition: {x: -235, y: 1581, z: 0}
   m_LocalScale: {x: 92.80001, y: 92.80001, z: 92.80001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1557857306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557857303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf1a9d2d029d114db5631d2f2e90958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
+--- !u!58 &1557857307
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557857303}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2799999
 --- !u!1 &1687969327
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +611,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1687969329}
   - component: {fileID: 1687969328}
-  m_Layer: 0
+  - component: {fileID: 1687969330}
+  m_Layer: 8
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,12 +680,26 @@ Transform:
   m_GameObject: {fileID: 1687969327}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -526, z: 0}
+  m_LocalPosition: {x: -7, y: 439, z: 0}
   m_LocalScale: {x: 72.88, y: 72.88, z: 72.88}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687969330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687969327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68f7b4cdf7756645b7e35cae64d36b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 600
+  bulletPrefab: {fileID: 4697461138292696779, guid: 17de7016685a3f249a972be995d7c7c3, type: 3}
 --- !u!1 &1846076301
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +786,7 @@ Transform:
   m_GameObject: {fileID: 1846076301}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16, y: -93, z: -953}
+  m_LocalPosition: {x: -16, y: 866, z: -953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -723,6 +802,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1873239556}
   - component: {fileID: 1873239555}
+  - component: {fileID: 1873239557}
+  - component: {fileID: 1873239558}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -791,12 +872,60 @@ Transform:
   m_GameObject: {fileID: 1873239554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1268, y: 1258, z: 0}
+  m_LocalPosition: {x: -659, y: 1827, z: 0}
   m_LocalScale: {x: 92.80001, y: 92.80001, z: 92.80001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1873239557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873239554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf1a9d2d029d114db5631d2f2e90958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
+--- !u!58 &1873239558
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873239554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2799999
 --- !u!1 &2002750964
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +936,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2002750966}
   - component: {fileID: 2002750965}
+  - component: {fileID: 2002750967}
+  - component: {fileID: 2002750968}
   m_Layer: 0
   m_Name: Asteroid (3)
   m_TagString: Untagged
@@ -875,12 +1006,60 @@ Transform:
   m_GameObject: {fileID: 2002750964}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1261, y: 733, z: 0}
+  m_LocalPosition: {x: 691, y: 1592, z: 0}
   m_LocalScale: {x: 92.80001, y: 92.80001, z: 92.80001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2002750967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002750964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf1a9d2d029d114db5631d2f2e90958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
+--- !u!58 &2002750968
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002750964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2799999
 --- !u!1 &2028089763
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +1122,7 @@ Transform:
   m_GameObject: {fileID: 2028089763}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 855, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -959,6 +1138,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2092393384}
   - component: {fileID: 2092393383}
+  - component: {fileID: 2092393385}
+  - component: {fileID: 2092393386}
   m_Layer: 0
   m_Name: Asteroid (2)
   m_TagString: Untagged
@@ -1027,12 +1208,60 @@ Transform:
   m_GameObject: {fileID: 2092393382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 491, y: 1277, z: 0}
+  m_LocalPosition: {x: 209, y: 1822, z: 0}
   m_LocalScale: {x: 92.80001, y: 92.80001, z: 92.80001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092393385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092393382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf1a9d2d029d114db5631d2f2e90958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
+--- !u!58 &2092393386
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092393382}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2799999
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
